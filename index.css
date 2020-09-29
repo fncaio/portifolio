@@ -23,7 +23,7 @@ header {
 
 body{
     font-family: arial;
-    margin:0px;
+    margin:0px 0px 0px 0px;
     background-color:rgb(108, 0, 197);
     align-items: center;
     overflow:auto;
