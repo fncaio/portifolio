@@ -4,53 +4,92 @@
     <title>Meu Portiólio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width. initial-scale=1*">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+    
 </head>
   
     <body>
-        <div id="home">
-
-        </div>
         <header id="menu">
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contatos">Contato</a></li>
+            <div id="home" class="container-background">
+            <nav class="menu">
+                <ul class="navbar">
+                    <li class="logo_dev">Dev Caio</li>
+                    <li class="hide_mobile"><a href="#home">Home</a></li>
+                    <li class="hide_mobile"><a href="#sobre">Sobre</a></li>
+                    <li class="hide_mobile"><a href="#contatos">Contato</a></li>
+                    <li class="hide_desktop" onclick= showSidebar()> <a href="#"><svg class="icon_menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
-
-            </div>   
+            </nav>  
+            </div> 
+        
+            <nav class="menu_res">
+            <ul class="navbar_res">
+                <li onclick= hideSidebar()> <a href=" "><svg class="icon_menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                </li>
+                <li class="navbar_item logo_dev">Dev Caio</li>
+                <li class="navbar_item"><a href="#home">Home</a></li>
+                <li class="navbar_item"><a href="#sobre">Sobre</a></li>
+                <li class="navbar_item"><a href="#contatos">Contato</a></li>
+            </ul>
+            </nav>  
         </header>
-        <div class="container-background">
-                <div id="logo">
-                    <img src="logoport.png">
+            
+    
+            
+            <div class="content" id="sobre">
+                <h2>Sobre Mim</h2>         
+            </div>
+            <aside class="dados_sobre">
+                <div class="dados_pessoais" id="meus_dados"> 
+                    <img class="foto_perfil" src="foto-perfil.jpg" alt="foto de perfil Caio Martins">
+                    <h3 class="name_perfil">Caio Martins</h3>
+                    <ul class="dados">
+                        <li class="dados_itens">Data de nascimento: 12/09/1995</li>
+                        <li class="dados_itens">Estado civil: Casado</li>
+                        <li class="dados_itens">Cidade: Cabo Frio-RJ</li>
+                    </ul>
                 </div>
-        </div>
+                
+                <div id="minha_historia" class="dados_pessoais"> 
+                    <h2>
+                        Minha História com a Tecnologia
+                    </h2>
+                    <p class="texto_apresentacao">
+                           Sou apaixonado por tecnologia estou sempre buscando estar mais próximo possível da area, fazendo cursos, acompanhado eventos e workshops. 
+                    Costumo dizer que trabalhar com TI é ser um "resolvedor de problemas", somos chamados para resolver problemas de hardware, software, bugs 
+                    e não sabemos oque vamos encontrar pela frente, isso me impusiona cada vez mais, e ao resolver ter aquele sentimento de dever cumprido que me 
+                    querer aprender cada vez mais. Pensando nisso, acho que sou digno de uma oportunida de mostrar que sou capaz de me desenvolver e agregar, de
+                    colocar mais tijolos nessa imensa parede da tecnologia. Posso contar com sua ajuda? &#9829;  
+
+                    </p>
+                </div>
+            </aside>
+
                 <div class="wrap">      
-                    <div class="content" id="sobre">
-                        <div class="title">
-                            <h2>Sobre</h2>
-                        </div>
-                    </div>
-                    <div class="cards">
+                    <section class="cards">
                         <div class="card-shadow">
-                                <img src="faculdade.png">
-                                <h3>Analise e desenvolvimento de Sistemas.</h3>
-                                <spn>No intuito de aprender mais sobre novas tecnologias e me especializar, estou cursando ADS pela Universidade Unigranrio.</spn>
+                                <img src="logohtml.png">
+                                <h3>HTML</h3>
+                                <spn>Tenho conhecimento em HTML intermediário.</spn>
                         </div>
                     
                         <div class="card-shadow">
-                            <img src="micro.png">
-                            <h3>Operador de Microcomputadores.</h3>
-                            <spn>Concluí o curso de Op.Micro na Centro de instrução Almirante Alexandrino.</spn>
+                            <img src="logocss.png">
+                            <h3>CSS.</h3>
+                            <spn>Tenho conhecimento intermediário em CSS com Flex-Box.</spn>
                         </div>
                         <div class="card-shadow">
-                            <img src="Redes.png">
-                            <h3>Operador de Redes.</h3>
-                            <spn>Concluí o curso de Op.Redes na Centro de instrução Almirante Alexandrino.</spn>
+                            <img src="logojs.png">
+                            <h3>JavaScript.</h3>
+                            <spn>Tenho conhecimento básico em JavaScript.</spn>
                         </div>
-                    </div>
+                    </section>
+
+
                 </div>
                 <div class="parallax">
                         <h3 id="live">Live to Code!</h3>  
@@ -65,10 +104,23 @@
             </div>
         <div class="contatos" id="contatos">
            <ul>
-               <li class="contatosli"><a href="https://github.com/fncaio"><img src="git.png"></a></li>
-               <li class="contatosli"><a href="https://www.linkedin.com/in/caio-martins-33ba641b4"><img src="lkpreto.png"></a></li>
-               <li class="contatosli"><a href=" https://api.whatsapp.com/send?phone=5521997809858"><img src="whatsapp1.png"></a></li>
+               <li class="contatosli"><a href="https://github.com/fncaio" target="_blank"><img src="git.png"></a></li>
+               <li class="contatosli"><a href="https://www.linkedin.com/in/caio-martins-33ba641b4" target="_blank"><img src="lkpreto.png"></a></li>
+               <li class="contatosli"><a href=" https://api.whatsapp.com/send?phone=5521972554491" target="_blank"><img src="whatsapp1.png"></a></li>
            </ul>
         </div>
+        <footer class="rodape">
+            <div3></div3>
+        </footer>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector (".navbar_res");
+                sidebar.style.display = "flex";
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector (".navbar_res");
+                sidebar.style.display = "none";
+            }
+        </script>
     </body>
 </html>
