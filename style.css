@@ -110,6 +110,7 @@ li{
     height: 32rem;
     width:100%;
     background-blend-mode:multiply;
+   background-size: cover;
     
 }
 
