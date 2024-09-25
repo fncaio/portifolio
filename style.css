@@ -105,12 +105,11 @@ li{
 }
 
 .container-background {
-	background-image: url('terra_background1.jpg');
+    background-image: url('terra_background1.jpg');
     background-size:100%;
     height: 32rem;
     width:100%;
     background-blend-mode:multiply;
-    background-size: cover;
     
 }
 
