@@ -153,8 +153,8 @@ li{
 
 #meus_dados{
     display: flex;
-    height: 25rem;
-    flex: 1 0 10%;
+    height: 30rem;
+    flex: 1 0 15%;
     flex-wrap: wrap;
 }
 
@@ -172,14 +172,31 @@ li{
     display: flex ;
     justify-content: center;
     font-size: 30px;
-    flex: 0 0 100%;
-    margin-bottom: 285px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
+.dados{
+    margin-left: 15px;  
+}
+.dados_itens{
+    list-style: none;
+    font-family: arial;
+}
+.dados_pessoais{
+    display: flex;
+    flex-direction: column;
+    border:solid 1px;
+    color: antiquewhite;
+    
+}
+
+/*Section minha história*/
 
 #minha_historia{
     display: flex;
     height: 25rem;
-    flex: 1 0 70%;
+    flex: 1 0 65%;
     flex-direction: column;
 }
 
@@ -199,18 +216,38 @@ li{
 }
 
 
-.dados{
-    margin: -260px 0 0 20px;  
-}
-.dados_itens{
-    list-style: none;
-    font-family: arial;
-}
-.dados_pessoais{
+/*botão para baixar meu curriculo*/
+.curriculo{
     display: flex;
-    border:solid 1px;
-    color: antiquewhite;
-    
+    flex-direction: column;
+
+}
+.meu_curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn_curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0  auto;
+    margin-top: 15px;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    background-color: #6f1bbe;
+}
+
+.btn_curriculo a{
+    color: #fff;
+    font-family: arial;
+
 }
 
 /* meu portifólio */
