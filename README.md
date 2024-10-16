@@ -13,7 +13,7 @@ Sobre tecnologia e inovação.
 <br>
 
 <p align="center">
-  <img alt="Imagem do desenvolvedor Caio Martins" src=".foto-perfil.jpg" width="100%">
+  <img alt="Imagem do desenvolvedor Caio Martins" src="foto-perfil.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
