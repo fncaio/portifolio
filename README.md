@@ -13,7 +13,7 @@ Sobre tecnologia e inovação.
 <br>
 
 <p align="center">
-  <img alt="Imagem do desenvolvedor Caio Martins" src="foto-perfil.jpg" width="100%">
+  <img alt="Imagem Caio Martins" src="foto-perfil.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Esse é um projeto pensado para disseminar a tecnologia em forma de portifolio. Aqui voce tera uma breve explanacao das habilidades do desenvolvedor Caio Martins.
+Esse é um projeto pensado para disseminar a tecnologia em forma de portifolio. Aqui voce tera uma breve explanacao das habilidades do profissional Caio Martins.
 
 
 

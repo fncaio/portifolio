@@ -1,141 +1,550 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <title>Meu Portiólio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width. initial-scale=1*">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfólio de Caio Martins. Redes de computadores, infraestrutura de TI, Linux, monitoramento e DevOps.">
+
+    <meta name="author" content="Caio Martins">
+
+    <title>Caio Martins | Infraestrutura e Redes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-  
-    <body>
-        <header id="menu">
-            <div id="home" class="container-background">
-            <nav class="menu">
-                <ul class="navbar">
-                    <li class="logo_dev">Dev Caio</li>
-                    <li class="hide_mobile"><a href="#home">Home</a></li>
-                    <li class="hide_mobile"><a href="#sobre">Sobre</a></li>
-                    <li class="hide_mobile"><a href="#contatos">Contato</a></li>
-                    <li class="hide_desktop" onclick= showSidebar()> <a href="#"><svg class="icon_menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </nav>  
-            </div> 
-        
-            <nav class="menu_res">
-            <ul class="navbar_res">
-                <li onclick= hideSidebar()> <a href=" "><svg class="icon_menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-                </li>
-                <li class="navbar_item logo_dev">Dev Caio</li>
-                <li onclick= hideSidebar() class="navbar_item"><a href="#home">Home</a></li>
-                <li onclick= hideSidebar() class="navbar_item"><a href="#sobre">Sobre</a></li>
-                <li onclick= hideSidebar() class="navbar_item"><a href="#contatos">Contato</a></li>
+
+<body>
+
+    <!-- Cabeçalho e navegação -->
+    <header class="header" id="inicio">
+
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">CM</span>
+                <span>Caio Martins</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato" class="nav-contact">Contato</a></li>
             </ul>
-            </nav>  
-        </header>
-            
-    
-            
-            <div class="content" id="sobre">
-                <h2>Sobre Mim</h2>         
-            </div>
-            <aside class="dados_sobre">
-                <div class="dados_pessoais" id="meus_dados"> 
-                    <img class="foto_perfil" src="foto-perfil.jpg" alt="foto de perfil Caio Martins">
-                    <h3 class="name_perfil">Caio Martins</h3>
-                    <ul class="dados">
-                        <li class="dados_itens">Data de nascimento: 12/09/1995</li>
-                        <li class="dados_itens">Estado civil: Casado</li>
-                        <li class="dados_itens">Cidade: Cabo Frio-RJ</li>
-                    </ul>
-                        <div class="curriculo">
-                            <h4 class="meu_curriculo">Baixe meu curriculo aqui</h4>
-                            <button class="btn_curriculo"><a href="curriculo.jpeg" download="curriculo.jpeg">Download</a></button>
-                        </div>
-                </div>
-                
-                <div id="minha_historia" class="dados_pessoais"> 
-                    <h2>
-                        Minha História com a Tecnologia
-                    </h2>
-                    <p class="texto_apresentacao">
-                           Sou apaixonado por tecnologia e estou sempre buscando estar mais próximo possível da área, fazendo cursos, acompanhado eventos e workshops. 
-                    Costumo dizer que trabalhar com TI é ser um "resolvedor de problemas", somos chamados para resolver problemas de hardware, software, bugs 
-                    e não sabemos oque vamos encontrar pela frente, isso me impusiona cada vez mais, ter aquele sentimento de dever cumprido ao resolver esses problemas que me faz  
-                    querer aprender cada vez mais. Pensando nisso, acho que sou digno de uma oportunida de mostrar que sou capaz de me desenvolver e agregar, de
-                    colocar mais tijolos nessa imensa parede da tecnologia. Posso contar com sua ajuda? &#9829;  
 
-                    </p>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Apresentação principal -->
+        <section class="hero container">
+
+
+            <div class="hero-image">
+
+                <div class="profile-frame">
+
+                    <img src="foto-perfil.jpg"
+                         alt="Foto de perfil de Caio Martins">
+
                 </div>
-            </aside>
-            <section class="portifolio">
+
+                <div class="profile-caption">
+                    <span class="status-indicator"></span>
+                    <span>Em constante aprendizado</span>
+                </div>
+
+            </div>
+
+            <div class="hero-content">
+
+                <span class="section-label">
+                    TECNOLOGIA • REDES • INFRAESTRUTURA
+                </span>
+
+                <h1>
+                    Olá, sou <span>Caio Martins.</span>
+                </h1>
+
                 <h2>
-                    Meus Projetos
+                    Infraestrutura de TI, Redes e Monitoramento
                 </h2>
-                <div><a target="_blank" href="https://fncaio.github.io/projetodiscover/">
-                    <img src="Cover.jpg" alt="Imagem do projeto Disciver feito junto ao instrutor Mayke Brito">
+
+                <p>
+                    Entusiasta da tecnologia, com interesse em redes de
+                    computadores, administração de sistemas Linux,
+                    monitoramento e infraestrutura de TI.
+
+                    Sempre buscando novos conhecimentos e oportunidades
+                    para desenvolver minhas habilidades na prática.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projetos" class="btn btn-primary">
+                        Conheça meus projetos
                     </a>
-                </div>
-            </section>
-                <div class="wrap">   
-                    <h2>
-                        Minhas Habilidades
-                    </h2>   
-                    <section class="cards">
-                        <div class="card-shadow">
-                                <img src="logohtml.png">
-                                <h3>HTML</h3>
-                                <spn>Tenho conhecimento em HTML intermediário.</spn>
-                        </div>
-                    
-                        <div class="card-shadow">
-                            <img src="logocss.png">
-                            <h3>CSS.</h3>
-                            <spn>Tenho conhecimento intermediário em CSS com Flex-Box.</spn>
-                        </div>
-                        <div class="card-shadow">
-                            <img src="logojs.png">
-                            <h3>JavaScript.</h3>
-                            <spn>Tenho conhecimento básico em JavaScript.</spn>
-                        </div>
-                    </section>
 
+                    <a href="Curriculo-Caio-Martins.jpg"
+                       class="btn btn-secondary"
+                       download="Curriculo-Caio-Martins.jpg">
+                        Baixar currículo
+                    </a>
 
                 </div>
-                <div class="parallax">
-                        <h3 id="live">Live to Code!</h3>  
-                        <p id="text">A programação está em todo lugar que tem inovação e tecnologia,</br>
-                    faz parte do nosso cotidiana e está em constante crescente,</br>
-                     mas se engana quem acha que vai conseguir "chegar lá" fácil: dedicação, paciência e proficionalismo </br>faz parte da vida de um programador,</br>
-                     mas acima de tudo, a vontade de aprender e se atualizar </br>deve estar na lista de prioridades profissionais de um bom programador.</p>
+
+                <div class="hero-technologies">
+                    <span>Áreas de interesse:</span>
+                    <span>Redes</span>
+                    <span>Linux</span>
+                    <span>Monitoramento</span>
+                    <span>DevOps</span>
                 </div>
-            <!-- Contatos -->
-            <div class="textcontatos">
-                <h2>Contatos</h2>
+
             </div>
-        <div class="contatos" id="contatos">
-           <ul>
-               <li class="contatosli"><a href="https://github.com/fncaio" target="_blank"><img src="git.png"></a></li>
-               <li class="contatosli"><a href="https://www.linkedin.com/in/caio-martins-33ba641b4" target="_blank"><img src="lkpreto.png"></a></li>
-               <li class="contatosli"><a href=" https://api.whatsapp.com/send?phone=5521972554491" target="_blank"><img src="whatsapp1.png"></a></li>
-           </ul>
+
+        </section>
+
+
+        <!-- Sobre mim -->
+        <section class="section container" id="sobre">
+
+            <div class="section-heading">
+
+                <span class="section-label">QUEM SOU EU</span>
+
+                <h2>Sobre mim</h2>
+
+                <p>
+                    Um pouco da minha trajetória e do meu interesse
+                    pela área de Tecnologia da Informação.
+                </p>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-card">
+
+                    <h3>Minha história com a tecnologia</h3>
+
+                    <p>
+                        Sou apaixonado por tecnologia e estou sempre
+                        buscando maneiras de me aproximar cada vez mais
+                        dessa área, por meio de cursos, estudos e
+                        experiências práticas.
+                    </p>
+
+                    <p>
+                        Costumo dizer que trabalhar com TI é ser um
+                        resolvedor de problemas. Somos chamados para
+                        lidar com situações envolvendo hardware,
+                        software, redes e infraestrutura, muitas vezes
+                        sem saber exatamente o que encontraremos.
+                    </p>
+
+                    <p>
+                        É justamente esse desafio que me motiva:
+                        investigar problemas, buscar soluções e sentir
+                        a satisfação de contribuir para que tudo
+                        volte a funcionar.
+                    </p>
+
+                    <p>
+                        Tenho especial interesse em redes de computadores,
+                        infraestrutura, sistemas Linux, monitoramento
+                        e tecnologias utilizadas em ambientes de TI.
+                    </p>
+
+                    <p>
+                        Meu objetivo é continuar evoluindo
+                        profissionalmente, adquirir experiência prática
+                        e contribuir com equipes e ambientes de tecnologia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Habilidades -->
+        <section class="section skills-section" id="habilidades">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">CONHECIMENTOS TÉCNICOS</span>
+
+                    <h2>Minhas habilidades</h2>
+
+                    <p>
+                        Tecnologias e áreas que estudo, utilizo e
+                        desenvolvo por meio de atividades práticas.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">01</div>
+
+                        <h3>Redes de Computadores</h3>
+
+                        <p>
+                            Fundamentos de redes, endereçamento IP,
+                            TCP/IP, DHCP, DNS, VLANs, roteamento
+                            e cabeamento estruturado.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">02</div>
+
+                        <h3>Infraestrutura e Linux</h3>
+
+                        <p>
+                            Administração básica de sistemas Linux,
+                            serviços de rede, servidores e
+                            infraestrutura de TI.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">03</div>
+
+                        <h3>Monitoramento</h3>
+
+                        <p>
+                            Laboratórios com Zabbix e Grafana,
+                            acompanhamento de disponibilidade
+                            e visualização de métricas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">04</div>
+
+                        <h3>Observabilidade</h3>
+
+                        <p>
+                            Estudos sobre métricas, logs, dashboards,
+                            monitoramento de ambientes e análise
+                            de informações operacionais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">05</div>
+
+                        <h3>DevOps e Automação</h3>
+
+                        <p>
+                            Fundamentos de Git, GitHub, Python,
+                            automação de tarefas e práticas
+                            de desenvolvimento.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">06</div>
+
+                        <h3>Desenvolvimento Web</h3>
+
+                        <p>
+                            Conhecimentos em HTML, CSS, JavaScript,
+                            Python, Django e desenvolvimento
+                            de aplicações web.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projetos -->
+        <section class="section container" id="projetos">
+
+            <div class="section-heading">
+
+                <span class="section-label">EXPERIÊNCIA PRÁTICA</span>
+
+                <h2>Projetos e laboratórios</h2>
+
+                <p>
+                    Projetos desenvolvidos e ambientes de laboratório
+                    utilizados para colocar conhecimentos em prática.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            INFRAESTRUTURA • MONITORAMENTO
+                        </span>
+
+                        <h3>Laboratório Zabbix e Grafana</h3>
+
+                        <p>
+                            Ambiente de laboratório em Linux para
+                            instalação e configuração de ferramentas
+                            de monitoramento e visualização de métricas.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Linux</span>
+                            <span>Zabbix</span>
+                            <span>Grafana</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <span class="project-status">
+                            Laboratório prático
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            REDES • MIKROTIK
+                        </span>
+
+                        <h3>Laboratório de redes</h3>
+
+                        <p>
+                            Práticas com equipamentos MikroTik,
+                            configuração de interfaces, bridge,
+                            DHCP, NAT e estudos de segmentação
+                            de redes utilizando VLANs.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>MikroTik</span>
+                            <span>RouterOS</span>
+                            <span>TCP/IP</span>
+                            <span>VLAN</span>
+                        </div>
+
+                        <span class="project-status">
+                            Em desenvolvimento
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            DESENVOLVIMENTO • INFRAESTRUTURA
+                        </span>
+
+                        <h3>Sistema de chamados de TI</h3>
+
+                        <p>
+                            Aplicação web para gerenciamento de
+                            chamados de suporte técnico, desenvolvida
+                            com Django e PostgreSQL e implantada
+                            em ambiente Linux.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>Linux</span>
+                        </div>
+
+                        <a href="https://github.com/fncaio/Projeto_chamados_Bmaia"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Ver projeto no GitHub →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contato -->
+        <section class="section contact-section" id="contato">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">VAMOS CONVERSAR</span>
+
+                    <h2>Entre em contato</h2>
+
+                    <p>
+                        Estou aberto a oportunidades, conexões
+                        profissionais e troca de conhecimentos.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a href="https://github.com/fncaio"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <img src="git.png" alt="">
+
+                        <span>GitHub</span>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/caio-martins-33ba641b4"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <img src="lkpreto.png" alt="">
+
+                        <span>LinkedIn</span>
+
+                    </a>
+
+
+                    <a href="https://api.whatsapp.com/send?phone=5521972554491"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <img src="whatsapp1.png" alt="">
+
+                        <span>WhatsApp</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © <span id="current-year"></span> Caio Martins.
+                Desenvolvido com dedicação.
+            </p>
+
+            <a href="#inicio">Voltar ao início ↑</a>
+
         </div>
-        <footer class="rodape">
-            <div3></div3>
-        </footer>
-        <script>
-            function showSidebar(){
-                const sidebar = document.querySelector (".navbar_res");
-                sidebar.style.display = "flex";
-            }
-            function hideSidebar(){
-                const sidebar = document.querySelector (".navbar_res");
-                sidebar.style.display = "none";
-            }
-        </script>
-    </body>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+
+            const isOpen = navLinks.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+        });
+
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("active");
+
+                menuToggle.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+
+
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
 </html>
