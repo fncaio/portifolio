@@ -1,33 +1,45 @@
-<h1 align="center"> Portifólio Caio Martins </h1>
+# Caio Martins | Portfólio
 
 <p align="center">
- <br/>
-Sobre tecnologia e inovação.
+  <img src="foto-perfil.jpg" width="180" alt="Foto de Caio Martins">
+</p>
+
+<h2 align="center">Redes de Computadores • Infraestrutura • Monitoramento</h2>
+
+<p align="center">
+  Portfólio pessoal desenvolvido para apresentar minha trajetória, conhecimentos, projetos e laboratórios práticos na área de Tecnologia da Informação.
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-
-<br>
-
-<p align="center">
-  <img alt="Imagem Caio Martins" src="foto-perfil.jpg" width="100%">
+  <a href="https://fncaio.github.io/portifolio/">Acessar portfólio</a> •
+  <a href="https://github.com/fncaio">GitHub</a> •
+  <a href="https://www.linkedin.com/in/caio-martins-33ba641b4">LinkedIn</a>
 </p>
 
-## 🚀 Tecnologias
+---
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## 🚀 Tecnologias utilizadas
 
-- HTML e CSS
+- HTML5
+- CSS3
 - JavaScript
-- Git e Github
+- Git e GitHub
 
-## 💻 Projeto
+## 💻 Sobre o projeto
 
-Esse é um projeto pensado para disseminar a tecnologia em forma de portifolio. Aqui voce tera uma breve explanacao das habilidades do profissional Caio Martins.
+Este projeto tem como objetivo apresentar minha evolução profissional e meus estudos na área de Tecnologia da Informação, com foco em redes de computadores, infraestrutura, sistemas Linux, monitoramento e observabilidade.
 
+O portfólio reúne conhecimentos, experiências práticas e projetos desenvolvidos durante minha jornada de aprendizado.
 
+## 🎯 Objetivos
 
-Feito com ♥ by Caio Martins.
+- Compartilhar projetos e laboratórios práticos.
+- Documentar minha evolução técnica.
+- Apresentar conhecimentos em infraestrutura e redes.
+- Conectar-me com profissionais e oportunidades na área de TI.
+
+---
+
+<p align="center">
+  Desenvolvido por <strong>Caio Martins</strong>.
+</p>
